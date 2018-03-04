@@ -229,6 +229,7 @@ function bar() {
 function namePlayer() {
   if (username.value !== '' && shooter.checked !== false || watcher.checked !== false || bomber.checked !== false) {
     player.innerHTML = 'Your Name: ' + username.value;
+    return true;
   }
 }
 

@@ -234,10 +234,10 @@ function namePlayer() {
 
 // validation function chose gender true
 function choseGender() {
-  if (male.checked !== false && shooter.checked !== false || watcher.checked !== false || bomber.checked !== false) {
-    titleGame.innerHTML = 'Welcome in The Games.... Master';
-  } else if (female.checked !== false && shooter.checked !== false || watcher.checked !== false || bomber.checked !== false) {
-    titleGame.innerHTML = 'Welcome in The Games.... Madam';
+  if (male.checked !== false && username.value !== '') {
+    titleGame.innerHTML = 'Welcome in The Games.... Master ' + username.value;
+  } else if (female.checked !== false && username.value !== '') {
+    titleGame.innerHTML = 'Welcome in The Games.... Madam ' + username.value;
   }
   return true;
 }
